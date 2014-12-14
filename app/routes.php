@@ -220,7 +220,7 @@ Route::get('/lesson1', function() {
 	return View::make('lesson1');
 });
 
-Route::get('/test', function() {
+Route::get('/requestalesson', function() {
 	return View::make('requestalesson');
 });
 
