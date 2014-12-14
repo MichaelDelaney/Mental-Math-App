@@ -187,6 +187,8 @@ return array(
 		'Str'               => 'Illuminate\Support\Str',
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
+		'Pre'             => 'Paste\Pre',
+		'RndStr'          => 'Xi\RandomString\RandomStringGenerator',
 		'View'              => 'Illuminate\Support\Facades\View',
 
 	),
