@@ -72,14 +72,14 @@
 			  		<li class="menu-item menu-item-has-children">
 			  			<a href="beginnerlessons" data-description="Getting started">Beginner</a>
 			  		</li>
-			  		<li class="menu-item"><a href="skills.html" data-description="Build on skills">Advanced</a></li>
+			  		<li class="menu-item"><a href="#" data-description="Build on skills">Advanced</a></li>
 		  		</ul>
 		  		<div  class="animate-me flipInX" data-wow-duration="3s">
 		  				<a href="home" id="logo-navigation"></a>
 		  		</div>
 		  		<ul id="right-navigation" class="animate-me fadeInRightBig">
-			  		<li class="menu-item"><a href="about.html" data-description="Help us grow">Request a Lesson</a></li>
-			  		<li class="menu-item"><a href="contact.html" data-description="Let's get in touch">Contact</a></li>
+			  		<li class="menu-item"><a href="requestalesson" data-description="Help us grow">Request a Lesson</a></li>
+			  		<li class="menu-item"><a href="#" data-description="Let's get in touch">Contact</a></li>
 		  		</ul>
 	  		</nav>
 
