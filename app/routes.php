@@ -17,13 +17,6 @@ Route::get('/', function()
 });
 
 
-Route::get('/books', function() {
-    return 'Here are all the books...';
-}); 
-
-Route::get('/books/{category}', function($category) {
-        return 'Here are all the books in the category of '.$category;
-});
 
 Route::get('/new', function() {
 
@@ -42,13 +35,7 @@ Route::post('/new', function() {
 
 });
 
-Route::get('/practice', function() {
 
-    $fruit = Array('Apples', 'Oranges', 'Pears');
-
-    echo Pre::render($fruit,'Fruit');
-
-});
 
 Route::get('/get-environment',function() {
 
@@ -221,13 +208,22 @@ Route::get('/practice-collection', function() {
 
 });
 
-Route::get('/test', function() {
-	return View::make('home');
+Route::get('/home', function() {
+	return View::make('hello');
 });
 
-Route::get('/test2', function() {
+Route::get('/beginnerlessons', function() {
 	return View::make('page');
 });
+
+Route::get('/lesson1', function() {
+	return View::make('lesson1');
+});
+
+Route::get('/test', function() {
+	return View::make('requestalesson');
+});
+
 
 Route::get('/request/create', 'RequestController@getCreate');
 Route::post('/request/create', 'RequestController@postCreate');

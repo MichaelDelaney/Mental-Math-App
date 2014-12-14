@@ -41,7 +41,7 @@
 	  		<div id="top-navigation">
 		  		<ul class="animate-me fadeInDown" data-wow-duration="1.2s">
 			  	<li class="menu-item"><i class="fa fa-phone"></i> 732.306.7894</li>
-			  		<li class="menu-item"><i class="fa fa-question"></i> mdelaney@fas.harvard.edu</a></li>
+			  		<li class="menu-item"> mdelaney@fas.harvard.edu</a></li>
 			  		<li class="menu-item"><span class="navigation-social">P4 - Dynamic Web Applications</span></li>
 			  		<li class="menu-item">
 			  			<!-- SEARCHFORM -->
@@ -68,37 +68,17 @@
 		  		<a href="#" id="close-navigation-mobile"><i class="fa fa-long-arrow-left"></i></a>
 	  			
 		  		<ul id="left-navigation" class="animate-me fadeInLeftBig">
+			  		
 			  		<li class="menu-item menu-item-has-children">
-			  			<a href="index.html" data-description="All starts here">Home</a>
-			  			<ul class="sub-menu bounceInDown">
-			  				<li class="menu-item"><a href="index.html">Slider fullscreen</a></li>
-				  			<li class="menu-item"><a href="index2.html">Video fullscreen</a></li>
-				  			<li class="menu-item"><a href="index3.html">Single Image</a></li>
-				  			<li class="menu-item"><a href="index-onepage.html"><i class="fa fa-star"></i> One Page</a></li>
-			  			</ul>
+			  			<a href="beginnerlessons" data-description="Getting started">Beginner</a>
 			  		</li>
-			  		<li class="menu-item menu-item-has-children">
-			  			<a href="portfolio.html" data-description="What we do">Portfolio</a>
-			  			<ul class="sub-menu bounceInDown">
-			  				<li class="menu-item"><a href="portfolio.html">All Projects</a></li>
-				  			<li class="menu-item"><a href="portfolio-single.html">Single Project</a></li>
-				  			<li class="menu-item"><a href="faq.html">FAQ</a></li>
-			  			</ul>
-			  		</li>
-			  		<li class="menu-item"><a href="skills.html" data-description="We're the best">Skills</a></li>
+			  		<li class="menu-item"><a href="skills.html" data-description="Build on skills">Advanced</a></li>
 		  		</ul>
 		  		<div  class="animate-me flipInX" data-wow-duration="3s">
-		  			<a href="#" onclick='return false;' id="logo-navigation"></a>
+		  				<a href="home" id="logo-navigation"></a>
 		  		</div>
 		  		<ul id="right-navigation" class="animate-me fadeInRightBig">
-			  		<li class="menu-item current-menu-item"><a href="about.html" data-description="We are a team">About</a></li>
-			  		<li class="menu-item menu-item-has-children">
-			  			<a href="blog.html" data-description="We share">Blog</a>
-			  			<ul class="sub-menu bounceInDown">
-				  			<li class="menu-item"><a href="blog.html">All Posts</a></li>
-				  			<li class="menu-item"><a href="blog-single.html">Single Post</a></li>
-			  			</ul>
-			  		</li>
+			  		<li class="menu-item"><a href="about.html" data-description="Help us grow">Request a Lesson</a></li>
 			  		<li class="menu-item"><a href="contact.html" data-description="Let's get in touch">Contact</a></li>
 		  		</ul>
 	  		</nav>
@@ -126,45 +106,34 @@
 		  			<!-- WIDGET -->
 			  		<div class="col-md-4 widget animate-me fadeInLeft">
 			  			<img src="images/logo-footer.png" id="footer-logo" alt="Logo footer">
-			  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper felis pulvinar neque pharetra auctor. Donec vel erat pretium, interdum justo sed, mollis tortor.</p>
-			  			<a href="about.html" class="btn btn-default"><i class="fa fa-users"></i> Read more</a>
+			  			<p>P4's main objective is to use PHP/Laravel to create a simple application that has a MySQL database and demostrates CRUD interactions.</p>
 			  		</div>
 		  			<!-- WIDGET -->
 			  		<div class="col-md-4 widget animate-me fadeInUp">
 				  		<h4>Navigation</h4>
 				  		<ul>
-					  		<li><a href="index.html">Home</a></li>
-					  		<li><a href="portfolio.html">Portfolio</a></li>
-					  		<li><a href="blog.html">Blog</a></li>
-					  		<li><a href="about.html">About Us</a></li>
+					  		<li><a href="index.html">Beginner</a></li>
+					  		<li><a href="portfolio.html">Advanced</a></li>
+					  		<li><a href="blog.html">Request a Lesson</a></li>
+					  		<li><a href="about.html">Contact Us</a></li>
 				  		</ul>
 			  		</div>
 		  			<!-- WIDGET -->
 			  		<div class="col-md-4 widget animate-me fadeInRight">
-			  			<h4>Contact</h4>
+			  			<h4>Harvard Extension School - CSCI E-15</h4>
 			  			<ul class="contact-informations">
-				  			<li class="contact-address">666 Avenue des Champs-Élysées. 75000 Paris</li>
-				  			<li class="contact-phone">(+33)0 11 22 33 44</li>
+				  			<li class="contact-address">Michael Delaney</li>
+				  			<li class="contact-phone">(732) 306-7894</li>
+							<li>       P4 - December 18th, 2014</li>
 			  			</ul>
-			  			<ul class="widget-social">
-			  				<!-- ALL ICONS AVAILABLE ->http://fortawesome.github.io/Font-Awesome/icons/#brand-->
-				  			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				  			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				  			<li><a href="#"><i class="fa fa-skype"></i></a></li>
-				  			<li><a href="#"><i class="fa fa-rss"></i></a></li>
-			  			</ul>
-			  			<a href="contact.html" class="btn btn-default"><i class="fa fa-envelope-o"></i> Contact Form</a>
+			  			<a href="mailto:mdelaney@fas.harvard.edu" class="btn btn-default"><i class="fa fa-envelope-o"></i> mdelaney@fas.harvard.edu</a>
 			  		</div>
 		  		</div>
 		  	</aside>
 		  	<div id="copyright" class="animate-me fadeInUp">
 		  		<div class="container">
-			  		<p>&#169; 2014 All Rights Reserved. Powered by <a href="index.html">Starry</a>.</p>
-			  		<ul id="footer-navigation">
-				  		<li><a href="page.html">Terms of Use</a></li>
-				  		<li><a href="page.html">Privacy Policy</a></li>
-				  		<li><a href="contact.html">Contact Us</a></li>
-			  		</ul>
+			  		<p>&#169; 2014 All Rights Reserved. Produced By Michael Delaney For Academic Purposes.</p>
+			  		
 		  		</div>
 		  	</div>
 	  	</footer>

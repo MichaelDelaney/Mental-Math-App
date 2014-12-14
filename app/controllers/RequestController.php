@@ -1,28 +1,12 @@
 <?php
 class RequestController extends \BaseController {
-	/**
-	*
-	*/
-	
-	
-	/**
-	* Process the "Add a book form"
-	* @return Redirect
-	*/
-/**
-	* Show the "Add a book form"
-	* @return View
-	*/
-	/**
-	*
-	*/
-	
+
 
 	
 	
 	public function getCreate() {
 		$siterequests = Siterequest::all();
-		return View::make('welcome');
+		return View::make('home');
 	}
 	
 	/**
@@ -33,6 +17,18 @@ class RequestController extends \BaseController {
 		# Instantiate the request model
 		$siterequest = new Siterequest();
 		
+		# Set 
+		$subject  = Input::get('subject');
+		$siterequest->subject = $subject;
+		
+		$author = Input::get('author');
+	    $siterequest->author = $author;
+		
+		$comment = Input::get('comment');
+	    $siterequest->comment = $comment;
+		
+		$email = Input::get('email_link');
+	    $siterequest->email_link = $email;
 		
 		# Magic: Eloquent
 		$siterequest->save();
@@ -53,7 +49,7 @@ class RequestController extends \BaseController {
 	
 	
 		$siterequests = Siterequest::all();
-		return View::make('hello');
+		return View::make('requestalesson');
 	}
 	
 }
