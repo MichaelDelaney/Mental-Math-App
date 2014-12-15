@@ -50,7 +50,8 @@
 							}
 						?>
 						</p>
-							
+						<br />
+						<p><a href="request_edit"><u>Do you want to edit a request on this page?</u></a></p>
 							
 						
 		  			</div>

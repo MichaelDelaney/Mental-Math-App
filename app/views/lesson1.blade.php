@@ -17,8 +17,9 @@
 	  			</h2>
 	  			<div class="row">
 	  				<div class="col-md-8">
-						<br />
-						<br />
+						
+						<h4>Instructions:</h4>
+						<br /><br />
 	  					<p class="text-justify">In this lesson you will learn how to square any 2-digit number that ends with the number 5.<br />
 						For example:<br />
 						<center><b>65^2 = 4,225</b></center> <br />
@@ -30,18 +31,15 @@
 						For example:<br />
 						<center><b>4,225</b></center> <br />
 						</p>
-						<h4><font color="purple">Try it out for yourself with this quiz:</font></h4><br />
-	
-		
+						<br />
+						<br />
+						<u><a href="beginnerlessons"><font color="#0066CC"><b>Try A Different Lesson</b></font></a></u>
+					
 		  			</div>
 		  			<div class="col-md-4">
-		  				<h3>Pick a Lesson:</h3>
-		  				<ul>
-							<li><u><a href="lesson1">Finding the square of a number that ends in 5</a></u></li>
-							<li><a href="#">Lesson 1</a></li>
-							<li><a href="#">Lesson 1</a></li>
-							<li><a href="#">Lesson 1</a></li>
-						</ul>
+		  				<h4><font color="purple">Try it out for yourself with this quiz:</font></h4>
+		  				<iframe src="quizzes/lesson1quiz.php" height="400" frameborder="0"></iframe>
+		
 		  			</div>
 	  			</div>
 	  			<br />

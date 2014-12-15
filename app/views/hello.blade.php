@@ -56,40 +56,20 @@
 		  			<tr class="skills-row">
 			  			<td class="skill animate-me zoomIn">
 				  			<h4><i class="fa fa-star-o"></i>PHP/Laravel</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl. 
-				  			Phasellus ac nibh ut dui fringilla aliquam</p>
+				  			<p>Stroke of genius uses Laravel as it's framework. The quizzes are generated with a simple php script.</p>
 			  			</td>
 			  			<td class="skill animate-me zoomIn">
 				  			<h4><i class="fa fa-star-o"></i>MySQL</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl. 
-				  			Phasellus ac nibh ut dui fringilla aliquam</p>
+				  			<p>The request that users post on the site and saved in a table inside of an sql database.</p>
 			  			</td>
 			  			<td class="skill animate-me zoomIn">
 				  			<h4><i class="fa fa-star-o"></i>CRUD Interactions</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl. 
-				  			Phasellus ac nibh ut dui fringilla aliquam</p>
+				  			<p>CRUD operations are used on the Request a Lesson page. A giver can leave a feedback comment, edit it, and delete it.</p>
 			  			</td>
 		  			</tr>
-		  			<tr class="skills-row animate-me zoomIn">
-			  			<td class="skill">
-				  			<h4><i class="fa fa-star-o"></i>JavaScript</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl. 
-				  			Phasellus ac nibh ut dui fringilla aliquam</p>
-			  			</td>
-			  			<td class="skill animate-me zoomIn">
-				  			<h4><i class="fa fa-star-o"></i>Blade Templates</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl.</p>
-			  			</td>
-			  			<td class="skill animate-me zoomIn">
-				  			<h4><i class="fa fa-star-o"></i>Ajax</h4>
-				  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat justo nisl. 
-				  			Phasellus ac nibh ut dui fringilla aliquam</p>
-			  			</td>
-		  			</tr>
+		  			
 	  			</table>
-	  			<div class="skill-button center animate-me fadeInUp">
-	  				<a href="skills.html" class="btn btn-default"><i class="fa fa-trophy"></i> Check Out our skills</a>
-	  			</div>
+	  			<br />
 	  			
 	  		</div>
 	  		

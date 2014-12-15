@@ -159,7 +159,7 @@ Route::get('/practice-reading-one-subject', function() {
 Route::get('/practice-updating', function() {
 
     # First get a book to update
-    $siterequest = Siterequest::where('author', 'LIKE', '%Juan%')->first();
+    $siterequest = Siterequest::where('subject', 'LIKE', '%5 x 5%')->first();
 
     # If we found the book, update it
     if($siterequest) {
@@ -213,7 +213,7 @@ Route::get('/home', function() {
 });
 
 Route::get('/beginnerlessons', function() {
-	return View::make('page');
+	return View::make('beginnerlessons');
 });
 
 Route::get('/lesson1', function() {
@@ -224,7 +224,25 @@ Route::get('/requestalesson', function() {
 	return View::make('requestalesson');
 });
 
+Route::get('/request_edit', function() {
+	return View::make('request_edit');
+});
 
 Route::get('/request/create', 'RequestController@getCreate');
 Route::post('/request/create', 'RequestController@postCreate');
 Route::get('/siterequest', 'RequestController@getIndex');
+Route::get('/request/edit', 'RequestController@getEdit');
+Route::post('/request/edit', 'RequestController@postEdit');
+
+Route::get('/search', function() {
+	$query = Input::get('query');
+	$siterequest = Siterequest::where('subject', 'LIKE', '%'. $query .'%')->first();
+ if($siterequest) {
+	return View::make('request_editresult')
+		->with('query', $query);
+		 }
+    else {
+        return "We couldn't find the topic you want to update.";
+    }
+});
+
