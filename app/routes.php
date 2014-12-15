@@ -220,6 +220,14 @@ Route::get('/lesson1', function() {
 	return View::make('lesson1');
 });
 
+Route::get('/lesson2', function() {
+	return View::make('lesson2');
+});
+
+Route::get('/lesson3', function() {
+	return View::make('lesson3');
+});
+
 Route::get('/requestalesson', function() {
 	return View::make('requestalesson');
 });

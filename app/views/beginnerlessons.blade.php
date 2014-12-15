@@ -25,9 +25,8 @@
 		  				<h3>Lessons:</h3>
 		  				<ul>
 							<li><u><a href="lesson1"><font color="#0066CC"><b>Finding the square of a number that ends in 5</b></font></a></u></li>
-							<li><a href="#">Lesson 2</a></li>
-							<li><a href="#">Lesson 3</a></li>
-							<li><a href="#">Lesson 4</a></li>
+							<li><u><a href="lesson2"><font color="#0066CC"><b>Multiply any nunmber by 4 instantly</b></font></a></u></li>
+							<li><u><a href="lesson3"><font color="#0066CC"><b>Square any numbers in the 50's</b></font></a></u></li>
 						</ul>
 		  			</div>
 	  			</div>
