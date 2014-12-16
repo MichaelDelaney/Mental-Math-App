@@ -14,7 +14,7 @@
 	  		<div class="container">
 	  			<!-- SKILLS -->
 	  			<h2 class="with-breaker animate-me fadeInUp">
-		  			Login<span>Time to practice math</span>
+		  			Login <br /><p style="font-size:16px">to study a lesson or make a request</p>
 				</h2>
 	  			<p class="center">
 				<!--Login form-->

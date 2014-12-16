@@ -213,46 +213,46 @@ Route::get('/home', function() {
 });
 
 
-Route::get('/beginnerlessons', array('before' => 'auth', function()
+Route::get('/beginnerlessons', function()
 {
     return View::make('beginnerlessons');
-}));
+});
 
 Route::get('/advancedlessons', function() {
 	return View::make('advancedlessons');
 });
 
-Route::get('/lesson1', function() {
+Route::get('/lesson1', array('before' => 'auth', function() {
 	return View::make('lesson1');
-});
+}));
 
-Route::get('/lesson2', function() {
+Route::get('/lesson2', array('before' => 'auth', function() {
 	return View::make('lesson2');
-});
+}));
 
-Route::get('/lesson3', function() {
+Route::get('/lesson3', array('before' => 'auth', function() {
 	return View::make('lesson3');
-});
+}));
 
-Route::get('/lesson4', function() {
+Route::get('/lesson4', array('before' => 'auth', function() {
 	return View::make('lesson4');
-});
+}));
 
-Route::get('/lesson5', function() {
+Route::get('/lesson5', array('before' => 'auth', function() {
 	return View::make('lesson5');
-});
+}));
 
-Route::get('/lesson6', function() {
+Route::get('/lesson6', array('before' => 'auth', function() {
 	return View::make('lesson6');
-});
+}));
 
 Route::get('/specialthanks', function() {
 	return View::make('specialthanks');
 });
 
-Route::get('/requestalesson', function() {
+Route::get('/requestalesson', array('before' => 'auth', function() {
 	return View::make('requestalesson');
-});
+}));
 
 Route::get('/request_edit', function() {
 	return View::make('request_edit');
@@ -289,7 +289,7 @@ Route::post('/signup',
             # Log the user in
             Auth::login($user);
 
-            return Redirect::to('/beginnerlessons')->with('flash_message', 'Welcome to Stroke of Genius!');
+            return Redirect::to('/home');
 
         }
     )
