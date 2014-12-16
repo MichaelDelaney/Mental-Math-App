@@ -93,4 +93,23 @@ class RequestController extends \BaseController {
     }
 	}
 	
+	
+	
+	
+	/**
+	* Process book deletion
+	*
+	* @return Redirect
+	*/
+	public function postDelete() {
+		try {
+	        $comment = Comment::get('id');
+	    }
+	    catch(exception $e) {
+	        return Redirect::to('/requestalesson/');
+	    }
+	    Comment::destroy(Input::get('id'));
+	    return Redirect::to('/requestalesson/');
+	}
+	
 }

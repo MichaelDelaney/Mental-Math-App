@@ -47,8 +47,13 @@
 								echo $siterequest->comment."<br />";
 								echo "<b>Contact Address:</b><br />";
 								echo $siterequest->email_link."<br />";
+								echo "<form action='/deleterequest'>
+    <input type='hidden' name='delete' value='".$siterequest->id."' placeholder='delete'/>
+    <button type='submit'>Delete Request</button>
+</form>";
 							}
 						?>
+						
 						</p>
 						<br />
 						<p><a href="request_edit"><u>Do you want to edit a request on this page?</u></a></p>

@@ -179,22 +179,22 @@ Route::get('/practice-updating', function() {
 });
 
 
-Route::get('/practice-deleting', function() {
+Route::get('/deleterequest', function() {
+$delete = Input::get('delete');
+    # First get a request to delete
+    $siterequest = Siterequest::where('id', '=', $delete);
 
-    # First get a book to delete
-    $siterequest = Siterequest::where('author', 'LIKE', '%Juan%')->first();
-
-    # If we found the book, delete it
+    # If we found the request, delete it
     if($siterequest) {
 
         # Goodbye!
         $siterequest->delete();
 
-        return "Deletion complete; check the database to see if it worked...";
+        return View::make('requestalesson');
 
     }
     else {
-        return "Can't delete - Book not found.";
+        return View::make('requestalesson');
     }
 
 });
@@ -267,6 +267,8 @@ Route::post('/comment/create', 'CommentController@postCreate');
 Route::get('/comments', 'CommentController@getIndex');
 Route::get('/comment/edit', 'CommentController@getEdit');
 Route::post('/comment/edit', 'CommentController@postEdit');
+Route::post('/comment/delete', 'CommentController@postDelete');
+
 
 
 Route::get('/search', function() {
