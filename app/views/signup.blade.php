@@ -25,7 +25,11 @@
 					{{ Form::password('password') }}<br><br>
 					{{ Form::submit('Submit') }}
 				{{ Form::close() }}
+				<br />
 				
+				@if(Session::get('flash_message'))
+        <div class='flash-message'>{{ Session::get('flash_message') }}</div>
+    @endif
 				<!--End of Signup form-->
 				</p>
 	  		</div>

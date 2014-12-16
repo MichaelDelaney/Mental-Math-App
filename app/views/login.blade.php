@@ -26,6 +26,10 @@
 						{{ Form::submit('Submit') }}
 					{{ Form::close() }}
 				<!--End of Login form-->
+				<br />
+				@if(Session::get('flash_message'))
+        <div class='flash-message'>{{ Session::get('flash_message') }}</div>
+    @endif
 				</p>
 	  		</div>
 	  	</div>

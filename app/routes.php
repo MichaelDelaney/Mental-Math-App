@@ -277,6 +277,21 @@ Route::post('/signup',
         'before' => 'csrf', 
         function() {
 
+		# Step 1) Define the rules
+		$rules = array(
+			'email' => 'required|email|unique:users,email',
+			'password' => 'required|min:6'
+		);
+		# Step 2)
+		$validator = Validator::make(Input::all(), $rules);
+		# Step 3
+		if($validator->fails()) {
+			return Redirect::to('/signup')
+				->with('flash_message', 'Sign up failed; please use a <b>valid email address</b> and a password with a <b>minimum of 6 characters</b>.')
+				->withInput()
+				->withErrors($validator);
+		}
+		
             $user = new User;
             $user->email    = Input::get('email');
             $user->password = Hash::make(Input::get('password'));

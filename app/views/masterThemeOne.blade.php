@@ -19,10 +19,7 @@
     
 </head>
 <body>
-	<!--FLASH MESSAGES-->
-	 @if(Session::get('flash_message'))
-        <div class='flash-message'>{{ Session::get('flash_message') }}</div>
-    @endif
+	
 	
   	<!-- LOADER DIV - ONLY HOME -->
   	<div id="loader">
@@ -38,7 +35,7 @@
 	  		<div id="top-navigation">
 		  		<ul class="animate-me fadeInDown" data-wow-duration="1.2s">
 			  		<li class="menu-item"><i class="fa fa-phone"></i> 732.306.7894</li>
-			  		<li class="menu-item"> mdelaney@fas.harvard.edu</li>
+			  		<li class="menu-item"> Michael Delaney</li>
 			  		<li class="menu-item"><span class="navigation-social">P4 - Dynamic Web Applications</span></li>	
 					<li class="menu-item">
 							@if(Auth::check())
@@ -74,6 +71,8 @@
 			  		<li class="menu-item"><a href="specialthanks" data-description="To Susan Buck">Special Thanks</a></li>
 		  		</ul>
 	  		</nav>
+	
+
     @yield('content')
 
     	
