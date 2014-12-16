@@ -216,6 +216,10 @@ Route::get('/beginnerlessons', function() {
 	return View::make('beginnerlessons');
 });
 
+Route::get('/advancedlessons', function() {
+	return View::make('advancedlessons');
+});
+
 Route::get('/lesson1', function() {
 	return View::make('lesson1');
 });
@@ -226,6 +230,18 @@ Route::get('/lesson2', function() {
 
 Route::get('/lesson3', function() {
 	return View::make('lesson3');
+});
+
+Route::get('/lesson4', function() {
+	return View::make('lesson4');
+});
+
+Route::get('/lesson5', function() {
+	return View::make('lesson5');
+});
+
+Route::get('/lesson6', function() {
+	return View::make('lesson6');
 });
 
 Route::get('/requestalesson', function() {
