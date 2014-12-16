@@ -244,6 +244,10 @@ Route::get('/lesson6', function() {
 	return View::make('lesson6');
 });
 
+Route::get('/specialthanks', function() {
+	return View::make('specialthanks');
+});
+
 Route::get('/requestalesson', function() {
 	return View::make('requestalesson');
 });
@@ -257,6 +261,13 @@ Route::post('/request/create', 'RequestController@postCreate');
 Route::get('/siterequest', 'RequestController@getIndex');
 Route::get('/request/edit', 'RequestController@getEdit');
 Route::post('/request/edit', 'RequestController@postEdit');
+
+Route::get('/comment/create', 'CommentController@getCreate');
+Route::post('/comment/create', 'CommentController@postCreate');
+Route::get('/comments', 'CommentController@getIndex');
+Route::get('/comment/edit', 'CommentController@getEdit');
+Route::post('/comment/edit', 'CommentController@postEdit');
+
 
 Route::get('/search', function() {
 	$query = Input::get('query');

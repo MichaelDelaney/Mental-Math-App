@@ -34,7 +34,37 @@
 						<br />
 						<br />
 						<u><a href="beginnerlessons"><font color="#0066CC"><b>Try A Different Lesson</b></font></a></u>
-					
+					<br />
+					<!--Comments Section-->
+					<h3>How'd you like this lesson?</h3><br/>
+							{{ Form::open(array('url' => '/comment/create')) }}
+								{{ Form::label('name','Name') }}
+								{{ Form::text('name'); }}<br />
+								{{ Form::label('note','Note') }}
+								{{ Form::text('note'); }}<br />
+								{{ Form::label('university','University') }}
+								{{ Form::text('university'); }}<br />
+								{{ Form::submit('Add'); }}
+							{{ Form::close() }}
+						<br />
+						<h4><font color="purple">Comments on this lesson:</font></h4>
+							
+							<?php
+							$collection = Comment::all();
+
+							foreach($collection as $comment) {
+								echo "<br />";
+								echo "<b>Name</b><br />";
+								echo $comment->name."<br />";
+								echo "<b>University</b><br />";
+								echo $comment->university."<br />";
+								echo "<b>Note</b><br />";
+								echo $comment->note."<br />";
+							}
+						?>
+						<br />	
+						
+					<!--End Comments Section Here-->
 		  			</div>
 		  			<div class="col-md-4">
 		  				<h4><font color="purple">Try it out for yourself with this quiz:</font></h4>

@@ -43,17 +43,6 @@
 			  	<li class="menu-item"><i class="fa fa-phone"></i> 732.306.7894</li>
 			  		<li class="menu-item"> mdelaney@fas.harvard.edu</a></li>
 			  		<li class="menu-item"><span class="navigation-social">P4 - Dynamic Web Applications</span></li>
-			  		<li class="menu-item">
-			  			<!-- SEARCHFORM -->
-			  			<div id="search-container" class="animate-me fadeInDown">
-					  		<form role="search" method="get" action="#" >
-								<input type="text" value="" name="s" id="s" placeholder="Search..."/>
-								<input type="hidden" name="searchsubmit" id="searchsubmit" value="true" />
-								<button type="submit" name="searchsubmit"><i class="fa fa-search"></i></button>
-					        </form>
-				  		</div>
-			  			<a href="#" id="search-toggle"><i class="fa"></i></a>
-			  		</li>
 		  		</ul>
 	  		</div>
 	  	
@@ -79,7 +68,7 @@
 		  		</div>
 		  		<ul id="right-navigation" class="animate-me fadeInRightBig">
 			  		<li class="menu-item"><a href="requestalesson" data-description="Help us grow">Request a Lesson</a></li>
-			  		<li class="menu-item"><a href="#" data-description="To Susan Buck">Special Thanks</a></li>
+			  		<li class="menu-item"><a href="specialthanks" data-description="To Susan Buck">Special Thanks</a></li>
 		  		</ul>
 	  		</nav>
 
