@@ -13,7 +13,7 @@
 	  		<div class="container">
 	  			<!-- ABOUT -->
 	  			<h2 class="with-breaker animate-me fadeInUp">
-		  		Special Thanks <span>To Susan Buck</span>
+		  		Welcome to Stroke of Genius <span>Get started with mental math now!</span>
 	  			</h2>
 	  			<div class="row">
 	  				<div class="col-md-10">

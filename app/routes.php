@@ -254,6 +254,10 @@ Route::get('/requestalesson', array('before' => 'auth', function() {
 	return View::make('requestalesson');
 }));
 
+Route::get('/welcomethanks', array('before' => 'auth', function() {
+	return View::make('welcomethanks');
+}));
+
 Route::get('/request_edit', function() {
 	return View::make('request_edit');
 });
@@ -289,7 +293,7 @@ Route::post('/signup',
             # Log the user in
             Auth::login($user);
 
-            return Redirect::to('/home');
+            return Redirect::to('/welcomethanks');
 
         }
     )
