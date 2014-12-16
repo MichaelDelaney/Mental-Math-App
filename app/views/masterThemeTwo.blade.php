@@ -30,7 +30,11 @@
   </head>
   <!-- START BODY -->
   <body>
-
+	<!--FLASH MESSAGES-->
+	 @if(Session::get('flash_message'))
+        <div class='flash-message'>{{ Session::get('flash_message') }}</div>
+    @endif
+	
   	<div id="page">
 	  	<!-- START HEADER -->
 	  	<header id="header" class="small with-separation-bottom">
@@ -41,8 +45,15 @@
 	  		<div id="top-navigation">
 		  		<ul class="animate-me fadeInDown" data-wow-duration="1.2s">
 			  	<li class="menu-item"><i class="fa fa-phone"></i> 732.306.7894</li>
-			  		<li class="menu-item"> mdelaney@fas.harvard.edu</a></li>
+			  		<li class="menu-item"> mdelaney@fas.harvard.edu</li>
 			  		<li class="menu-item"><span class="navigation-social">P4 - Dynamic Web Applications</span></li>
+					<li class="menu-item">
+							@if(Auth::check())
+								<a href='/logout'>Log out {{ Auth::user()->email; }}</a>
+							@else 
+								<a href='/signup'>Sign up</a> or <a href='/login'>Log in</a>
+							@endif
+					</li>
 		  		</ul>
 	  		</div>
 	  	

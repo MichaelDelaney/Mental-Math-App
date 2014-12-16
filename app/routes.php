@@ -212,9 +212,11 @@ Route::get('/home', function() {
 	return View::make('hello');
 });
 
-Route::get('/beginnerlessons', function() {
-	return View::make('beginnerlessons');
-});
+
+Route::get('/beginnerlessons', array('before' => 'auth', function()
+{
+    return View::make('beginnerlessons');
+}));
 
 Route::get('/advancedlessons', function() {
 	return View::make('advancedlessons');
@@ -254,6 +256,82 @@ Route::get('/requestalesson', function() {
 
 Route::get('/request_edit', function() {
 	return View::make('request_edit');
+});
+
+
+Route::get('/signup',
+    array(
+        'before' => 'guest',
+        function() {
+            return View::make('signup');
+        }
+    )
+);
+
+Route::post('/signup', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $user = new User;
+            $user->email    = Input::get('email');
+            $user->password = Hash::make(Input::get('password'));
+
+            # Try to add the user 
+            try {
+                $user->save();
+            }
+            # Fail
+            catch (Exception $e) {
+                return Redirect::to('/signup')->with('flash_message', 'Sign up failed; please try again.')->withInput();
+            }
+
+            # Log the user in
+            Auth::login($user);
+
+            return Redirect::to('/beginnerlessons')->with('flash_message', 'Welcome to Stroke of Genius!');
+
+        }
+    )
+);
+
+Route::get('/login',
+    array(
+        'before' => 'guest',
+        function() {
+            return View::make('login');
+        }
+    )
+);
+
+Route::post('/login', 
+    array(
+        'before' => 'csrf', 
+        function() {
+
+            $credentials = Input::only('email', 'password');
+
+            if (Auth::attempt($credentials, $remember = true)) {
+                return Redirect::intended('/')->with('flash_message', 'Welcome Back!');
+            }
+            else {
+                return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
+            }
+
+            return Redirect::to('login');
+        }
+    )
+);
+
+# /app/routes.php
+Route::get('/logout', function() {
+
+    # Log out
+    Auth::logout();
+
+    # Send them to the homepage
+    return Redirect::to('/');
+
 });
 
 Route::get('/request/create', 'RequestController@getCreate');
