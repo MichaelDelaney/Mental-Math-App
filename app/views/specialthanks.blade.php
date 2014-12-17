@@ -16,7 +16,7 @@
 		  		Special Thanks <span>To Susan Buck</span>
 	  			</h2>
 	  			<div class="row">
-	  				<div class="col-md-10">
+	  				<div class="welcome">
 						
 						<br /><br />
 	  					<p class="text-justify">

@@ -14,23 +14,23 @@
 	  		<div class="container">
 	  			<!-- SKILLS -->
 	  			<h2 class="with-breaker animate-me fadeInUp">
-		  			Login <br /><p style="font-size:16px">to study a lesson or make a request</p>
+		  			Login <br /><span>To study a lesson or make a request</span>
 				</h2>
-	  			<p class="center">
+	  			<div class="signuplogincss">
 				<!--Login form-->
 					{{ Form::open(array('url' => '/login')) }}
-						Email<br>
+						<b>Email Address</b><br>
 						{{ Form::text('email') }}<br><br>
-						Password:<br>
+						<b>Password</b><br>
 						{{ Form::password('password') }}<br><br>
-						{{ Form::submit('Submit') }}
+						{{ Form::submit('Login') }}
 					{{ Form::close() }}
 				<!--End of Login form-->
 				<br />
 				@if(Session::get('flash_message'))
         <div class='flash-message'>{{ Session::get('flash_message') }}</div>
     @endif
-				</p>
+				</div>
 	  		</div>
 	  	</div>
 	  	<!-- END MAIN CONTAINER -->

@@ -60,11 +60,11 @@
 			  			</td>
 			  			<td class="skill animate-me zoomIn">
 				  			<h4><i class="fa fa-star-o"></i>MySQL</h4>
-				  			<p>The request that users post on the site and saved in a table inside of an sql database.</p>
+				  			<p>The requests that users post on the site are saved in a table inside of an sql database. You can also leaves comment under a lesson.</p>
 			  			</td>
 			  			<td class="skill animate-me zoomIn">
 				  			<h4><i class="fa fa-star-o"></i>CRUD Interactions</h4>
-				  			<p>CRUD operations are used on the Request a Lesson page. A giver can leave a feedback comment, edit it, and delete it.</p>
+				  			<p>CRUD operations are used on the Request a Lesson page. A user can leave a feedback comment, edit it, and delete it at their will.</p>
 			  			</td>
 		  			</tr>
 		  			

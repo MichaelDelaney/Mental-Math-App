@@ -156,24 +156,27 @@ Route::get('/practice-reading-one-subject', function() {
 
 });
 
-Route::get('/practice-updating', function() {
-
+Route::get('/updating', function() {
+$edit = Input::get('edit');
     # First get a book to update
-    $siterequest = Siterequest::where('subject', 'LIKE', '%5 x 5%')->first();
+    $siterequest = Siterequest::where('id', '=', $edit)->first();
 
     # If we found the book, update it
     if($siterequest) {
 
         # Give it a different title
-        $siterequest->subject = 'The Really Great Gatsby';
-
+        $author = Input::get('author');
+	    $siterequest->author = $author;
+		
+		$comment = Input::get('comment');
+	    $siterequest->comment = $comment;
         # Save the changes
         $siterequest->save();
 
-        return "Update complete; check the database to see if your update worked...";
+        return View::make('requestalesson')->with('flash_message', 'Thank you for your update.');
     }
     else {
-        return "Book not found, can't update.";
+		return View::make('requestalesson')->with('flash_message', 'Edit failed; please try again.');
     }
 
 });

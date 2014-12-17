@@ -13,6 +13,7 @@
     <!-- FAVICON -->	
 	<!--<link rel="shortcut icon" href="images/favicon.png" />-->
     <!-- STYLESHEETS -->
+	<link rel="shortcut icon" href="{{ asset('/images/favicon.ico') }}">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
@@ -108,10 +109,10 @@
 			  		<div class="col-md-4 widget animate-me fadeInUp">
 				  		<h4>Navigation</h4>
 				  		<ul>
-					  		<li><a href="index.html">Beginner</a></li>
-					  		<li><a href="portfolio.html">Advanced</a></li>
-					  		<li><a href="blog.html">Request a Lesson</a></li>
-					  		<li><a href="about.html">Contact Us</a></li>
+					  		<li><a href="/beginnerlessons">Beginner</a></li>
+					  		<li><a href="/advancedlessons">Advanced</a></li>
+					  		<li><a href="/requestalesson">Request a Lesson</a></li>
+					  		<li><a href="/specialthanks">Special Thanks</a></li>
 				  		</ul>
 			  		</div>
 		  			<!-- WIDGET -->
@@ -120,7 +121,7 @@
 			  			<ul class="contact-informations">
 				  			<li class="contact-address">Michael Delaney</li>
 				  			<li class="contact-phone">(732) 306-7894</li>
-							<li>       P4 - December 18th, 2014</li>
+							<li>       P4 Due - December 18th, 2014</li>
 			  			</ul>
 			  			<a href="mailto:mdelaney@fas.harvard.edu" class="btn btn-default"><i class="fa fa-envelope-o"></i> mdelaney@fas.harvard.edu</a>
 			  		</div>

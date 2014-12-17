@@ -16,26 +16,28 @@
 		  			Ah, so you want to edit a request? <span>Add on to others thoughts!</span>
 	  			</h2>
 	  			<div class="row">
-	  				<div class="col-md-8">
+	  				<div class="welcome">
 	  					<h3>What request did you want to edit?</h3>
 
 						<br />
-						{{ Form::open(array('url' => '/search2', 'method' => 'GET')) }}
-						{{ Form::label('query','Paragraphs ') }}
-						{{ Form::text('query'); }}
-						{{ Form::submit('Submit'); }}
-						{{ Form::close() }}
+<form action="/updating">
+Select the topic request you want to edit:<br />
+<select name="edit">
+					<?php
+							$collection = Siterequest::all();
+							foreach($collection as $siterequest) {
+								echo "<option value='".$siterequest->id."'>".$siterequest->subject."</option>";
+							}
+					?>
+</select>
+<br /><br />
+What is you name? *You will be listed as the last modifier.<br>
+<input type="text"  size="47" name="author" placeholder="Your Name"/><br /><br />
+Request Details<br>
+<textarea  rows="5" cols="45" name="author" placeholder="The comment you insert here will replace the current comment of the request."></textarea><br /><br />
+<button type='submit'>Edit Request</button>
+</form>
 						<br />
-						<p>
-					
-						</p>
-							
-						
-		  			</div>
-		  			<div class="col-md-4">
-		  				<h3>Thank You</h3>
-		  				<p>We appeciate you taking the time to..
-						</p>
 		  			</div>
 	  			</div>
 	  			<br />
