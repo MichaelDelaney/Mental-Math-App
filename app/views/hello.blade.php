@@ -20,7 +20,7 @@
 	  		<div id="shade"></div>
 			<div class="flexslider" id="header-slider">
 		  		<ul class="slides">
-		  			<li><img src="images/backgrounds/bg1.jpg"></li>
+		  			<li><img src="images/backgrounds/bg1.jpg"/></li>
 		  		</ul>	
 		  	</div>
 		 </header>
@@ -66,22 +66,22 @@
 				</h2>
 	  			<div id="team-container" class="row">
 	  				<div class="col-md-3 team-single">
-	  					<img src="images/team/franklin.jpg" class="animate-me bounceIn">
+	  					<img src="images/team/franklin.jpg" class="animate-me bounceIn"/>
 	  					<h3 class="center">Benjamin Franklin</h3>
 	  					<p>"No employment can be managed without arithmetic, no mechanical invention without geometry."</p>
 			  		</div>
 	  				<div class="col-md-3 team-single">
-	  					<img src="images/team/einstein.jpg" class="animate-me bounceIn">
+	  					<img src="images/team/einstein.jpg" class="animate-me bounceIn"/>
 	  					<h3 class="center">Albert Einstein</h3>
 	  					<p>"Pure mathematics is, in its way, the poetry of logical ideas."</p>
 			  		</div>
 	  				<div class="col-md-3 team-single">
-	  					<img src="images/team/sylvester.jpg" class="animate-me bounceIn">
+	  					<img src="images/team/sylvester.jpg" class="animate-me bounceIn"/>
 	  					<h3 class="center">James Sylvester</h3>
 	  					<p>"Mathematics is the music of reason."</p>
 			  		</div>
 	  				<div class="col-md-3 team-single">
-	  					<img src="images/team/cantor.jpg" class="animate-me bounceIn">
+	  					<img src="images/team/cantor.jpg" class="animate-me bounceIn"/>
 	  					<h3 class="center">Georg Cantor</h3>
 	  					<p>"In mathematics the art of proposing a question must be held of higher value than solving it."</p>
 	  				</div>
