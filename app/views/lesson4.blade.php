@@ -1,17 +1,10 @@
 @extends('masterThemeTwo')
-
 @section('title')
 	Stroke of Genius
-	
 @stop
- 
  @section('content')
-
-
-	  	<!-- START MAIN CONTAINER -->
-	  	<div class="main-container">
+	<div class="main-container">
 	  		<div class="container">
-	  			<!-- ABOUT -->
 	  			<h2 class="with-breaker animate-me fadeInUp">
 		  			Quickly multiply any number by nine
 	  			</h2>
@@ -38,15 +31,8 @@
 		  			<div class="col-md-4">
 		  				<h4><font color="purple">Try it out for yourself with this quiz:</font></h4>
 		  				<iframe src="quizzes/lesson4quiz.php" height="400" frameborder="0"></iframe>
-		
 		  			</div>
-	  			</div>
-	  			<br />
-				<br />
-				<br />
+	  			</div><br /><br /><br />
 	  		</div>
-	  	
-	  		
 	  	</div>
-	  	<!-- END MAIN CONTAINER -->
 @stop

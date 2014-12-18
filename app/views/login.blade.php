@@ -1,18 +1,10 @@
 @extends('masterThemeTwo')
-
 @section('title')
 	Stroke of Genius
-	
 @stop
- 
  @section('content')
-
-
-	  	
-	  	<!-- START MAIN CONTAINER -->
-	  	<div class="main-container">
+	<div class="main-container">
 	  		<div class="container">
-	  			<!-- SKILLS -->
 	  			<h2 class="with-breaker animate-me fadeInUp">
 		  			Login <br /><span>To study a lesson or make a request</span>
 				</h2>
@@ -28,10 +20,9 @@
 				<!--End of Login form-->
 				<br />
 				@if(Session::get('flash_message'))
-        <div class='flash-message'>{{ Session::get('flash_message') }}</div>
-    @endif
+				<div class='flash-message'>{{ Session::get('flash_message') }}</div>
+				@endif
 				</div>
 	  		</div>
 	  	</div>
-	  	<!-- END MAIN CONTAINER -->
 @stop

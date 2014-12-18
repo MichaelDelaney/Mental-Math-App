@@ -27,8 +27,7 @@ class CreateCommentsTable extends Migration {
         $table->string('note');
         $table->string('university');
 
-        # FYI: We're skipping the 'tags' field for now; more on that later.
-
+        
     });
 }
 

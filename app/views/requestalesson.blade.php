@@ -1,19 +1,11 @@
 @extends('masterThemeTwo')
-
 @section('title')
 	Stroke of Genius
-	
 @stop
- 
  @section('content')
-
-
-	  	<!-- START MAIN CONTAINER -->
-	  	<div class="main-container">
+	<div class="main-container">
 	  		<div class="container">
-		
-	  			<!-- ABOUT -->
-	  			<h2 class="with-breaker animate-me fadeInUp">
+				<h2 class="with-breaker animate-me fadeInUp">
 		  			Request A Lesson <span>Help us grow!</span>
 	  			</h2>
 	  			<div class="welcome">
@@ -22,7 +14,6 @@
 						If there is a trick or tip out there to boost your mental math skills, we want to make sure it is offered here.
 						If you know of one that isn't on this site, please leave a request for consideration. It's your contribution to this community that makes it so valuable. 
 						</p><br/>
-				
 						<h3>Request Form</h3>
 		  				<p>
 							{{ Form::open(array('url' => '/request/create')) }}
@@ -37,9 +28,7 @@
 								{{ Form::submit('Submit Lesson Request'); }}
 							{{ Form::close() }}
 						</p><br/>
-						
 						<h4><font color="purple">Requests under consideration:</font></h4><br />
-
 						<p>
 						<?php
 							$collection = Siterequest::all();
@@ -59,19 +48,12 @@
 										<button type='submit'>Delete Request</button>
 										</form>";
 								echo "<img src='images/team/banner.jpg'>";
-
-								
-								
 							}
 						?>
 						</p>
 						<br />
 						<p><a href="/request_edit"><u>Do you want to edit a request on this page?</u></a></p>	
-	  			</div>
-	  			<br />
-				<br />
-				<br />
+	  			</div><br /><br /><br />
 	  		</div>
 	  	</div>
-	  	<!-- END MAIN CONTAINER -->
 @stop

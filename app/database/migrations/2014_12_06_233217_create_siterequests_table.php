@@ -30,8 +30,7 @@ class CreateSiterequestsTable extends Migration {
         $table->string('email_link');
 		
 
-        # FYI: We're skipping the 'tags' field for now; more on that later.
-
+        
     });
 }
 
