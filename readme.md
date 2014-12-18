@@ -10,7 +10,9 @@
 
 ----
 ## Demo
-*  
+*  http://screencast.com/t/nXzsPi5VhJSZ
+* I also uploaded the video to youtube, because screencast takes long to load the video because of the graphics: 
+* https://www.youtube.com/watch?v=tsIfAOoGEho&feature=youtu.be
 
 ----
 ## Details
