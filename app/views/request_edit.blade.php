@@ -25,7 +25,7 @@
 							What is you name? *You will be listed as the last modifier.<br>
 							<input type="text"  size="47" name="author" placeholder="Your Name"/><br /><br />
 							Request Details<br>
-							<textarea  rows="5" cols="45" name="author" placeholder="The comment you insert here will replace the current comment of the request."></textarea><br /><br />
+							<textarea  rows="5" cols="45" name="comment" placeholder="The comment you insert here will replace the current comment of the request."></textarea><br /><br />
 							<button type='submit'>Edit Request</button>
 							</form>
 						<br />
