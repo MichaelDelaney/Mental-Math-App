@@ -16,17 +16,19 @@
 ## Details
 * I downloaded the following images available at these direct link:
  http://www.softicons.com/system-icons/hydropro-icons-by-mediadesign/my-computer-icon
- James Sylvester Image
+* Image download: James Sylvester Image
 http://upload.wikimedia.org/wikipedia/commons/2/29/James_Joseph_Sylvester.jpg
-Georg Cantor Image
+* Image download: Georg Cantor Image
 http://upload.wikimedia.org/wikipedia/commons/e/e7/Georg_Cantor2.jpg
-Albert Einstein Image
+* Image download: Albert Einstein Image
 http://content8.flixster.com/rtactor/42/23/42230_pro.jpg
-Modern UI Icon
+* Image Download: Modern UI Icon Set
 http://modernuiicons.com/
-Ben Franklin Image
+* Image download: Ben Franklin Image
 http://upload.wikimedia.org/wikipedia/commons/2/25/Franklin-Benjamin-LOC.jpg
-Banner
+* Image Galaxy:
+http://galaxydancefestival.com/files/2012/05/Galaxy.jpg
+* Image download: Banner
 http://static.squarespace.com/static/5106d80fe4b0807d1f05338e/t/512e97a6e4b0c046ed7a0542/1362007975608/
 ----
 ## Outside Code
